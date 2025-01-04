@@ -15,7 +15,7 @@ public class spiralMatrix {
             }
 
             //right
-            for(int i=endCol+1;i<=endCol;i++){
+            for(int i=startRow+1;i<=endRow;i++){
                 System.out.print(matrix[i][endCol] + " ");
             }
 
@@ -24,7 +24,7 @@ public class spiralMatrix {
                 if(startRow == endRow){
                     break;
                 }
-                System.out.print(matrix[endRow][j]);
+                System.out.print(matrix[endRow][j] + " ");
             }
 
             //left
