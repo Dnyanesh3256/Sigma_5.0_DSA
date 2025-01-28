@@ -9,16 +9,22 @@ public class Q4 {
             return 0;
         }
 
+        int count = 0;
+
         int firstCharRemove = countSubStr(str, si+1, ei);
         int lastCharRemove = countSubStr(str, si, ei-1);
         int firstAndLastCharRemove = countSubStr(str, si+1, ei-1);
 
-        int ans = firstCharRemove + lastCharRemove - firstAndLastCharRemove;
+        count = firstCharRemove + lastCharRemove - firstAndLastCharRemove;
 
-        return ans;
+        if(str.charAt(si) == str.charAt(ei)){
+            count++;
+        }
+
+        return count;
     }
     public static void main(String[] args) {
         String str = "abcab";
-        System.out.println(countSubStr(str, 0, str.length()));
+        System.out.println(countSubStr(str, 0, str.length()-1));
     }
 }
