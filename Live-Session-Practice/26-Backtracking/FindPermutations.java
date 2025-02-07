@@ -1,4 +1,6 @@
 public class FindPermutations {
+
+    //Time Complexity : O(n * n!)
     public static void findPermutations(String str, String ans){
         if(str.length() == 0){
             System.out.println(ans);
