@@ -5,5 +5,6 @@ public class IntroArrayList {
         System.out.println(list.size());
         list.add(5);
         System.out.println(list.size());
+        System.out.println(list.get(0));
     }
 }
